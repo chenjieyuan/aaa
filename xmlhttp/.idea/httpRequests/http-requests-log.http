@@ -1,0 +1,64 @@
+POST http://127.0.0.1:8001/api/who/?name=123456
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8001/api/who/?name=123456
+Accept: application/json
+
+<> 2019-08-01T121352.200.txt
+
+###
+
+GET https://127.0.0.1:8001/api/who/?name=123456
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8001/api/who?name=123456
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8001/api/who?name=123456
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8001/api/who?name=
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8001/api/who
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8888/api/who
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8001/api/who
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8001/api/who
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8001/api/who
+Accept: application/json
+
+###
+
+GET https://httpbin.org/ip
+Accept: application/json
+
+<> 2019-08-01T113740.200.json
+
+###
+

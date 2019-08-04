@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--<div id="showForm">-->
+    <!--<form action="/postform" method="post" id="ajaxForm">   &lt;!&ndash;postform 是用于提交的地址&ndash;&gt;-->
+        <!--<input type="text" name="user">-->
+        <!--<input type="number" name="age">-->
+        <!--<button type="submit">提交</button>-->
+    <!--</form>-->
+<!--</div>-->
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>跳转</title>
+    <script type="text/javascript">
+        //把表单的action改为2.jsp
+        function Two() {
+            document.form.action = "2.jsp";
+            document.form.submit();
+        }
+        //把表单的action改为3.jsp
+        function Three() {
+            document.form.action = "3.jsp";
+            document.form.submit();
+        }
+    </script>
+</head>
+<body>
+ 
+<form action="" method="post" name="form">
+        <table width="300" border="1" align="center" bgcolor="#9AD3A4" bordercolor="red">
+            <tr><td align="center" colspan="2" >button跳转</td></tr>
+            <tr>
+                <td><input type="button" value="跳转到2.jsp" οnclick="Two()"      class="botton"/></td>
+                <td><input type="button" value="跳转到3.jsp" οnclick="Three()"    class="botton"/></td>
+            </tr>
+        </table>
+</form>
+</body>
+</html>

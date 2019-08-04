@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+　　<head>
+    　　<title>test</title>
+    　　<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    　　<SCRIPT LANGUAGE="JavaScript">
+    <!--
+    var request = {
+        QueryString : function(val) {
+            var uri = window.location.search;
+            var re = new RegExp("" +val+ "=([^&?]*)", "ig");
+            return ((uri.match(re))?(uri.match(re)[0].substr(val.leng.th+1)):null);
+        }
+    }
+    var a = request.QueryString ("a");
+    var b = request.QueryString ("b");
+    var c = request.QueryString ("c");
+    if ((a != null)){a=a} else{a="参数A空"}
+    if ((b != null)){b=b} else{b="参数B空"}
+    if ((c != null)){c=c} else{c="参数C空"}
+    document.writeln("参数A: " + a);
+    document.writeln("<br>参数B: " + b);
+    document.writeln("<br>参数C: " + c);
+    //-->
+</SCRIPT>
+    　　</head>
+　　<body>
+　　<form name="form1" action="?">
+    　　请输入参数值:<br>
+    　　<SCRIPT LANGUAGE="JavaScript">
+    document.writeln("A:<input type='text' name='a' value='"+a+"'><br>");
+    document.writeln("B:<input type='text' name='b' value='"+b+"'><br>");
+    document.writeln("C:<input type='text' name='c' value='"+c+"'><br>");
+</SCRIPT>
+    　　<input type="submit" name="Submit" value="提交参数查观效果">
+    　　</form>
+　　</body>
+　　</html>
